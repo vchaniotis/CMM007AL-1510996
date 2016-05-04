@@ -64,15 +64,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 }
 elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST["name"];
-    $summary = $_POST["summary"];
+    $entryTitle = $_POST["entryTitle"];
+    $entrySummary = $_POST["entrySummary"];
     $category = $_POST["category"];
+    $submitter = $_POST["submitter"];
     include("connection.php");
-    $sql = "INSERT INTO bugs(bugName, BugSummary, BugCategory) VALUES ('$name', '$summary', '$category')";
+    $sql = "INSERT INTO blogview(entryTitle, entrySummary, category, submitter) VALUES ('$entryTitle', '$entrySummary', '$category', '$submitter')";
     $result = mysqli_query($db, $sql);
 
 
-    header("location: showbugs.php?id=" . mysqli_insert_id($db));
+    header("location: blog.php?id=" . mysqli_insert_id($db));
 }
 else {
     header("location: index.php");

@@ -45,6 +45,7 @@
                         echo "<p>" . $category . "</p>";
                         $submitter = $row['submitter'];
                         echo "<p>" . $submitter . "</p>";
+                        echo "<br>";
                     }
                     ?>
                 </div>

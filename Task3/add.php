@@ -41,14 +41,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             <div id="content">
                 <div id="form">
                     <form method="POST">
-                        <div id="title">Entry Title: <input type="text" name="title" id="boxtitle" required></div><br>
-                        <div id="summary">Entry Summary: </div><textarea rows="4" cols="50" name="summary" id="boxsummary" required></textarea><br>
+                        <div id="title">Entry Title: <input type="text" name="entryTitle" id="boxtitle" required></div><br>
+                        <div id="summary">Entry Summary: </div><textarea rows="4" cols="50" name="entrySummary" id="boxsummary" required></textarea><br>
                         <div id="category">Category: <select name="category" id="boxcategory" required>
                             <option value="Work" selected>Work</option>
                             <option value="University">University</option>
                             <option value="Family">Family</option>
                         </select><br></div>
-                        <div id="name">Submitted By: <input type="text" name="name" id="boxname"><br></div>
+                        <div id="name">Submitted By: <input type="text" name="submitter" id="boxname"><br></div>
                         <input type="submit" value="Submit" id="button">
                     </form>
                 </div>

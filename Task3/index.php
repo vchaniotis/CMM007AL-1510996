@@ -30,6 +30,7 @@
             <img src="blog.png" alt="Blog">
         </div>
     </div>
+    <hr>
     <footer>Designed by Chaniotis Vasileios-Efthymios, 2016</footer>
 </div>
 </body>

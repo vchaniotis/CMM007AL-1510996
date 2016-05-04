@@ -55,6 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             </div>
         </div>
     </div>
+    <hr>
     <footer>Designed by Chaniotis Vasileios-Efthymios, 2016</footer>
 </div>
 </body>

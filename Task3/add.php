@@ -31,9 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         <div id="navigation">
             <ul>
                 <li><a href="blog.html">All Blog Items</a></li>
-                <li><a href="blog.html">Work Items</a></li>
-                <li><a href="blog.html">University Items</a></li>
-                <li><a href="blog.html">Family Items</a></li>
+                <li><a href="blog.html?category=work">Work Items</a></li>
+                <li><a href="blog.html?category=university">University Items</a></li>
+                <li><a href="blog.html?category=family">Family Items</a></li>
                 <li><a href="add.html">Insert a Blog Item</a></li>
             </ul>
         </div>

@@ -95,12 +95,16 @@ img {
 article {
     margin-left: 10px;
     font-size: 12px;
+    height: 220px;
+    overflow-y: auto;
 }
 
 #articlesummary {
     text-align: justify;
     width: 80%;
 }
+
+
 
 footer {
     font-size: 14px;

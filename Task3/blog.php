@@ -25,9 +25,33 @@
         </div>
         <div id="maincontent">
             <article>
-                <p>Today at work by Adam</p>
-                <p>Work</p>
-                <p id="articlesummary">Today I went to work and did lots of very complicated coding things. I was very pleased that I managed to finish them all</p>
+                <div>
+                    <?php
+                    include("connection.php");
+                    $sql = "SELECT * FROM blogview";
+                    if(!empty($_GET["id"])){
+                        $id = $_GET["id"];
+                        $sql = "SELECT * FROM blogview WHERE blogitemID = '$id'";
+                    }
+                    elseif(!empty($_GET["category"])) {
+                        $category = $_GET["category"];
+                        $sql = "SELECT * FROM blogview WHERE category = '$category'";
+                    }
+
+                    $result = mysqli_query($db, $sql);
+
+                    while($row = $result -> fetch_array()) {
+                        $entryTitle = $row['entryTitle'];
+                        echo "<p>" . $entryTitle . "</p>";
+                        $entrySummary = $row['entrySummary'];
+                        echo "<p>" . $entrySummary . "</p>";
+                        $category = $row['category'];
+                        echo "<p>" . $category . "</p>";
+                        $submitter = $row['submitter'];
+                        echo "<p>" . $submitter . "</p>";
+                    }
+                    ?>
+                </div>
             </article>
         </div>
     </div>

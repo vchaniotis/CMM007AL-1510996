@@ -73,7 +73,7 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = mysqli_query($db, $sql);
 
 
-    header("location: blog.php?id=" . mysqli_insert_id($db));
+    header("location: blog.php");
 }
 else {
     header("location: index.php");

@@ -29,11 +29,7 @@
                     <?php
                     include("connection.php");
                     $sql = "SELECT * FROM blogview";
-                    if(!empty($_GET["id"])){
-                        $id = $_GET["id"];
-                        $sql = "SELECT * FROM blogview WHERE blogitemID = '$id'";
-                    }
-                    elseif(!empty($_GET["category"])) {
+                    if(!empty($_GET["category"])) {
                         $category = $_GET["category"];
                         $sql = "SELECT * FROM blogview WHERE category = '$category'";
                     }

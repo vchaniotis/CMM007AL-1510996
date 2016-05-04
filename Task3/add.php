@@ -30,11 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <div id="mainbody">
         <div id="navigation">
             <ul>
-                <li><a href="blog.html">All Blog Items</a></li>
-                <li><a href="blog.html?category=work">Work Items</a></li>
-                <li><a href="blog.html?category=university">University Items</a></li>
-                <li><a href="blog.html?category=family">Family Items</a></li>
-                <li><a href="add.html">Insert a Blog Item</a></li>
+                <li><a href="blog.php">All Blog Items</a></li>
+                <li><a href="blog.php?category=work">Work Items</a></li>
+                <li><a href="blog.php?category=university">University Items</a></li>
+                <li><a href="blog.php?category=family">Family Items</a></li>
+                <li><a href="add.php">Insert a Blog Item</a></li>
             </ul>
         </div>
         <div id="maincontent">
